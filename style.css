@@ -66,7 +66,7 @@ label{
 .result{
     font-family: 'Raleway', sans-serif;
     display: grid;
-    grid-template-columns: 350px 90px 280px;
+    grid-template-columns: 350px 200px 280px;
     grid-template-areas: 
     "i la a"
     "i lpr p"
@@ -119,25 +119,29 @@ button:active{background-color: #443729;}
 }
 
 .result>.l-price{
-    grid-area: lpr;
+    grid-area: a;
 }
 
 .result>.l-rooms{
-    grid-area: lr;
+    grid-area: lpr;
+    margin-top: 50px;
 }
 
 .result>.l-park{
     grid-area: lpark;
 }
 
-.result>.l-immediate{}
+.result>.l-immediate{
+    grid-area: lr;
+    margin-top: 50px;
+}
 
 .result>.address{
-    grid-area: a;
+    grid-area: la;
 }
 
 .price{
-    grid-area: p;
+    grid-area: a;
 }
 
 .result>.rooms {
@@ -145,11 +149,20 @@ button:active{background-color: #443729;}
 }
 
 .result>.parking{
-    grid-area: park;
+    grid-area: p;
+    margin-top: 50px;
 }
 
-.result>.immediate{}
-
+.result>.immediate{
+    grid-area: i;
+}
+.contactDetails{
+    grid-area: r;
+    margin-top: 50px;
+}
+.contactDetailsEmail{
+    grid-area: park;
+}
 .no-match{
     color: #DD6300;
     display: inline-block;
